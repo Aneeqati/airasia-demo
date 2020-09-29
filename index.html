@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/logo.png" sizes="16x16" type="image/png">
+    <meta name="description" content="Well, hello there! Let's get to know each other a little better.">
+    <title> All About Your Travels | AirAsia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <div class="container-fluid text-center">
+        <div class="header text-center">
+            <img src="assets/images/logo.png" />
+        </div>
+        <h4 class="text-center">Places you've travelled to</h4>
+        <div class="pt-1 pb-1 text-center mb-1">
+            <input class="text-center border-right-0 border-left-0 border-top-0" type="text" id="filter-results"
+                placeholder="Type here to search" />
+        </div>
+        <div class="row mt-2 ml-1 ">
+            <div class="malaysia col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="malaysia" id="Malaysia">
+                        <p class="card-text p-3">Malaysia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="malaysia col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="alorsetar" id="Alorsetar">
+                        <p class="card-text p-3">Alor Setar</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" malaysia col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="kotakinabalu" id="KotaKinabalu">
+                        <p class="card-text p-3"> Kota Kinabalu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="malaysia col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="bintulu" id="Bintulu">
+                        <p class="card-text p-3">Bintulu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="malaysia col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="kualalumpur" id="KualaLumpur">
+                        <p class="card-text p-3">Kuala Lumpur</p>
+                    </div>
+                </div>
+            </div>
+            <div class="malaysia col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="ipoh" id="Ipoh">
+                        <p class="card-text p-3">Ipoh</p>
+                    </div>
+                </div>
+            </div>
+            <div class="malaysia col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="johorbahru" id="Johor">
+                        <p class="card-text p-3">Johor Bahru</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" malaysia col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="kuching" id="Kuching">
+                        <p class="card-text p-3">Kuching</p>
+                    </div>
+                </div>
+            </div>
+            <div class="taiwan col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="taiwan" id="Taiwan">
+                        <p class="card-text p-3">Taiwan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="taiwan col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="kaohsiung" id="KaoHsiung">
+                        <p class="card-text p-3">KaoHsiung</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="taiwan col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="taipei" id="Taipei">
+                        <p class="card-text p-3">Taipei</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thailand col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="thailand" id="Thailand">
+                        <p class="card-text p-3">Thailand</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thailand col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="bangkok" id="Bangkok">
+                        <p class="card-text p-3">Bangkok</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" thailand col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="chiangrai" id="Chiangrai">
+                        <p class="card-text p-3">Chiangrai</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thailand col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="chiangmai" id="Chiangmai">
+                        <p class="card-text p-3">ChiangMai</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="thailand col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="hatyai" id="Hatyai">
+                        <p class="card-text p-3">Hatyai</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thailand col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="huahin" id="HuaHin">
+                        <p class="card-text p-3">HuaHin</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" thailand col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="phuket" id="Phuket">
+                        <p class="card-text p-3">Phuket</p>
+                    </div>
+                </div>
+            </div>
+            <div class="japan col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="japan" id="Japan">
+                        <p class="card-text p-3">Japan</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="japan col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="sapporo" id="Sapporo">
+                        <p class="card-text p-3">Sapporo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="japan col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="fukuoka" id="Fukuoka">
+                        <p class="card-text p-3">Fukuoka</p>
+                    </div>
+                </div>
+            </div>
+            <div class="japan col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="tokyo" id="Tokyo">
+                        <p class="card-text p-3">Tokyo</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" japan col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="okinawa" id="Okinawa">
+                        <p class="card-text p-3">Okinawa</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vietnam col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="vietnam" id="Vietnam">
+                        <p class="card-text p-3">Vietnam</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vietnam col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="cantho" id="CanTho">
+                        <p class="card-text p-3">CanTho</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vietnam col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="dalat" id="DaLat">
+                        <p class="card-text p-3">Dalat</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vietnam col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="danang" id="DaNang">
+                        <p class="card-text p-3">DaNang</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" vietnam col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="hanoi" id="Hanoi">
+                        <p class="card-text p-3">Hanoi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vietnam col-sm-2 item-list mt-2">
+                <div class="card ">
+                    <div class="card-body item" onclick="checkplace(this.id)" data-id="hochiminh" id="HoChiMinh">
+                        <p class="card-text p-3">HoChiMinh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="btn savebtn text-center" href="thankyou.html">Continue</a>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+</script>
+<script src="assets/js/main.js"></script>
+
+</html>

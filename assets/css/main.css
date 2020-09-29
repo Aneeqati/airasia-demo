@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "CocogoosePro-Regular";
+  src: url("../fonts/Cocogoose\ Pro\ Regular.ttf") format("truetype");
+}
+body {
+  font-family: CocogoosePro-Regular, sans-serif !important;
+  font-size: 12px;
+}
+@media (max-width: 540px) {
+  .col-sm-2 {
+    width: 50% !important;
+  }
+  .row {
+    justify-content: left !important;
+  }
+  .savebtn {
+    right: 25% !important;
+    width: 50% !important;
+    font-size: 12px !important;
+    border-radius: 30px !important;
+    background: rgb(167, 222, 206) !important;
+    padding: 10px !important;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 768px) {
+  .col-sm-2 {
+    width: 33% !important;
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+  .row {
+    justify-content: left !important;
+  }
+}
+@media (min-width: 769px) {
+  .col-sm-2 {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+#filter-results {
+  width: 100% !important;
+  border-bottom: 1px solid lightgray;
+}
+.savebtn {
+  right: 25%;
+  width: 50%;
+  font-size: 12px;
+  border-radius: 30px;
+  background: rgb(167, 222, 206);
+  position: absolute;
+  padding: 20px;
+}
+.thankyou-note {
+  font-size: 20px;
+  font-weight: 100;
+}
+.backbtn {
+  box-shadow: 0px 1px 2px 2px gray;
+}
